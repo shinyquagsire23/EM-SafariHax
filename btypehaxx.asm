@@ -1,3 +1,7 @@
+@To insert this routine, place the pointer (+1) at 0x7F900 and a bx r1 (08 47) at 0x7F8D2.
+
+
+@IRRELIVANT TO THIS
 @Needed to put this somewhere
 @ 08016AE2
 @Changes the ball that the Safari Zone menu uses
