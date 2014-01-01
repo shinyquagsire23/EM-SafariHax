@@ -14,7 +14,6 @@ strb r1, [r0]
 ldr r1, var_decrypt
 ldr r0, var_4fff
 bl bx_r1
-ldrh r0, [r0]
 cmp r0, #0x0
 beq normalbattle
 b store
