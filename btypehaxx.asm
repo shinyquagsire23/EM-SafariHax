@@ -1,10 +1,8 @@
-@To insert this routine, place the pointer (+1) at 0x7F900 and a bx r1 (08 47) at 0x7F8D2.
+@To insert this routine, place the pointer (+1) at 0xB08E8 and a bx r1 (08 47) at 0xB08B6.
 
-
-@IRRELIVANT TO THIS
-@Needed to put this somewhere
-@ 08016AE2
-@Changes the ball that the Safari Zone menu uses
+@ Also, as a note,
+@ 08030F12
+@ Changes the ball that the Safari Zone menu uses
 
 .thumb
 .thumb_func
@@ -36,8 +34,8 @@ bx r1
 
 .align 2
 
-battle_flag: .word 0x02022B4D @Ruby = 020239F8
-safari_balls: .word 0x02039994 @Ruby = 02038808
-var_decrypt: .word 0x0806E454+1
+battle_flag: .word 0x02022FEC
+safari_balls: .word 0x0203A04C
+var_decrypt: .word 0x0809D694+1
 var_4fff: .word 0x00004FFF
-return: .word 0x0807F8D8+1
+return: .word 0x080B08BA+1

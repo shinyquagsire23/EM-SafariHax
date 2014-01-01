@@ -1,4 +1,4 @@
-@Place pointer to this routine at 0x0802D694 and a bx r1 (08 47) at 0x0802D622
+@Place pointer to this routine at 0x0805653C and a bx r1 (08 47) at 0x080564CA
 @This routine hijacks the ball chance table and allows all Pokeballs to temporarily become Master Balls. This routine also serves as the function to reset variable 0x4FFF
 
 .thumb
@@ -39,7 +39,7 @@ bx r1
 
 .align 2
 
-return: .word 0x0802D62A+1
-var_decrypt: .word 0x0806E454+1
+return: .word 0x080564D2+1
+var_decrypt: .word 0x0809D694+1
 var_4fff: .word 0x00004FFF
-chance_table: .word 0x08250892
+chance_table: .word 0x0831C48D
