@@ -9,7 +9,7 @@ push {r0-r3}
 ldr r1, var_decrypt
 ldr r0, var_4fff
 bl bx_r1
-ldrh r1, [r0]
+mov r1, r0
 cmp r1, #0x80
 beq over9000
 mov r1, #0x0
